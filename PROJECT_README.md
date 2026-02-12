@@ -1,6 +1,35 @@
-# CareerMate AI - Smart Career Advisor
+# CareerMate AI – Smart Career Advisor
 
-A modern, responsive frontend web application for career guidance and development, built with React and Tailwind CSS.
+CareerMate AI is a modern, responsive frontend web application designed to provide intelligent career guidance to students and job seekers. The platform simulates resume analysis, skill gap detection, career recommendations, learning roadmap generation, and interview preparation using mock data.
+
+
+
+## Problem Statement
+
+Students and fresh graduates often struggle with career planning due to:
+
+* Lack of personalized career guidance
+* Difficulty identifying industry-required skills
+* Inefficient manual resume evaluation
+* Limited access to structured interview practice
+
+There is no single integrated platform that combines resume analysis, skill gap identification, career recommendations, and interview simulation in one system.
+
+
+
+## Proposed Solution
+
+CareerMate AI provides a unified platform that:
+
+* Simulates resume analysis and skill extraction
+* Identifies missing skills based on job roles
+* Recommends suitable career paths
+* Generates a structured learning roadmap
+* Provides interview questions and simulated feedback
+
+This project is frontend-only and uses mock data to demonstrate the system workflow.
+
+
 
 ## Features
 
@@ -11,25 +40,29 @@ A modern, responsive frontend web application for career guidance and developmen
 - **AI Interview Simulator**: Practice interviews with AI-generated questions and feedback
 - **Profile Management**: Manage your personal and career information
 
+
+
 ## Tech Stack
 
-- **React** (JavaScript) - UI framework
-- **React Router DOM** - Client-side routing
-- **Tailwind CSS** - Styling framework
-- **Vite** - Build tool and dev server
+* React (JavaScript)
+* React Router DOM
+* Tailwind CSS
+* Vite
+
 
 ## Project Structure
 
 ```
 src/
-├── components/         # Reusable UI components
+├── components/
 │   ├── Navbar.jsx
 │   ├── Sidebar.jsx
 │   ├── Footer.jsx
 │   ├── StatCard.jsx
 │   ├── FeatureCard.jsx
 │   └── SkillBadge.jsx
-├── pages/             # Page components
+│
+├── pages/
 │   ├── Landing.jsx
 │   ├── Dashboard.jsx
 │   ├── UploadResume.jsx
@@ -38,67 +71,105 @@ src/
 │   ├── LearningRoadmap.jsx
 │   ├── InterviewSimulator.jsx
 │   └── Profile.jsx
-├── layouts/           # Layout components
+│
+├── layouts/
 │   ├── LandingLayout.jsx
 │   └── DashboardLayout.jsx
-├── data/              # Mock data
+│
+├── data/
 │   └── mockData.js
-├── App.jsx            # Main app component with routing
-├── main.jsx           # App entry point
-└── index.css          # Global styles and Tailwind configuration
+│
+├── App.jsx
+├── main.jsx
+└── index.css
 ```
 
-## Pages
 
-1. **Landing Page** (`/`)
-   - Hero section with call-to-action
-   - Features showcase
-   - About section
 
-2. **Dashboard** (`/dashboard`)
-   - Overview of career metrics
-   - Quick actions
-   - Recent activity
-   - Progress tracking
+## How to Run the Project
 
-3. **Upload Resume** (`/upload-resume`)
-   - Drag & drop file upload
-   - Resume analysis simulation
+### 1. Prerequisites
 
-4. **Skill Analysis** (`/skill-analysis`)
-   - Extracted skills display
-   - Missing skills identification
-   - Strengths and weaknesses
+Make sure the following are installed:
 
-5. **Career Recommendations** (`/career-recommendations`)
-   - Job matches with percentages
-   - Job details and required skills
-   - Apply and save options
+* Node.js (LTS version recommended)
+* npm
+* Git
 
-6. **Learning Roadmap** (`/learning-roadmap`)
-   - Weekly learning plan
-   - Topics and projects
-   - Progress tracking
+Check versions:
 
-7. **Interview Simulator** (`/interview-simulator`)
-   - Interview questions by category
-   - Answer submission
-   - AI-powered feedback
+```
+node -v
+npm -v
+git --version
+```
 
-8. **Profile** (`/profile`)
-   - Personal information editing
-   - Career interests selection
-   - Profile management
 
-## Design Features
+### 2. Clone the Repository
 
-- Purple/indigo color theme with gradient buttons
-- Fully responsive design
-- Smooth hover effects and transitions
-- Clean, professional UI
-- Mobile-friendly sidebar navigation
-- Card-based layout components
+```
+git clone https://github.com/your-username/careermate-ai.git
+```
 
-## Note
+Navigate into the project directory:
 
-This is a frontend-only application using mock data. No backend or authentication is implemented.
+```
+cd careermate-ai
+```
+
+
+### 3. Install Dependencies
+
+```
+npm install
+```
+
+
+### 4. Run the Development Server
+
+```
+npm run dev
+```
+
+Open the displayed local URL in your browser (usually `http://localhost:5173/`).
+
+
+## Build for Production
+
+To generate a production build:
+
+```
+npm run build
+```
+
+To preview the production build:
+
+```
+npm run preview
+```
+
+
+## System Workflow
+
+1. User opens the landing page.
+2. User navigates to the dashboard.
+3. User uploads a resume (simulation).
+4. System displays extracted skills and missing skills.
+5. Career recommendations are shown with match percentage.
+6. Learning roadmap provides structured weekly plans.
+7. Interview simulator allows answer submission and displays feedback.
+
+
+## Important Notes
+
+* This project uses mock data only.
+* No backend integration is implemented.
+* No authentication or login functionality is included.
+* AI responses are simulated for demonstration purposes.
+
+---
+
+## Intended Use
+
+This project is developed for academic and educational purposes as a university major project demonstrating frontend architecture and AI-based system design concepts.
+
